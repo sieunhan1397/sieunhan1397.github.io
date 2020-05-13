@@ -1,4 +1,4 @@
-var count = new Date("May 13, 2020 20:35:00").getTime();
+var count = new Date("May 13, 2020 21:15:00").getTime();
 const daysView = document.querySelector("#days");
 const hoursView = document.querySelector("#hours");
 const minutesView = document.querySelector("#minutes");
@@ -12,7 +12,9 @@ var x = setInterval(() => {
     clearInterval(x);
     document.querySelector(".count").style.display = "none";
     document.querySelector("h2").style.display = "none";
-    document.querySelector("h1").textContent = "Phi Vân";
+    document.querySelector("h1").textContent = "Happy Birth Day";
+    document.querySelector("h1").style.fontSize = "70px";
+    document.querySelector("h1").className = "lato";
     document.querySelector(".flex-container").style.display = "flex";
     document.querySelector(".far").addEventListener("click", function () {
       alert(

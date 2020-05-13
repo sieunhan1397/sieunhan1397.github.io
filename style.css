@@ -1,3 +1,40 @@
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  .container h1 {
+    text-decoration: uppercase;
+    font-size: 4.2vw;
+    margin: 0px;
+    letter-spacing: 10px;
+    padding-left: 12px;
+  }
+
+  .container h2 {
+    margin: 0;
+    font-size: 3.4vw;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 4px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .container h1 {
+    text-decoration: uppercase;
+    font-size: 60px;
+    margin: 0px;
+    letter-spacing: 10px;
+    padding-left: 12px;
+  }
+
+  .container h2 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 4px;
+  }
+}
 body,
 html {
   margin: 0;
@@ -22,7 +59,7 @@ body {
   color: white;
 }
 
-.container h1 {
+/* .container h1 {
   text-decoration: uppercase;
   font-size: 4.2vw;
   margin: 0px;
@@ -35,7 +72,8 @@ body {
   font-size: 3.4vw;
   font-weight: 500;
   font-style: italic;
-}
+  letter-spacing: 4px;
+} */
 
 .count {
   margin: 40px 0;
@@ -55,7 +93,7 @@ body {
 .count-item span {
   display: block;
   font-size: 26px;
-  margin-top: 26px;
+  margin-top: 36px;
   color: yellow;
 }
 .fal .fa-heart {
@@ -87,6 +125,16 @@ body {
 .arrow .fa {
   pointer-events: none;
 }
+
+.pv {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  font-size: 80px;
+  margin: 0px;
+  letter-spacing: 10px;
+  padding-left: 12px;
+  color: yellow;
+}
 /* .far:hover {
   cursor: pointer;
   color: rgba(255, 255, 255, 0.7);
@@ -116,9 +164,9 @@ body {
 .unit {
   text-align: center;
 }
-.unit p {
+.lato {
   font-size: 60px;
-  margin-top: 100px;
+  padding-bottom: 14px;
   font-family: "Lato", sans-serif;
   font-weight: 100;
   text-transform: uppercase;
@@ -130,7 +178,7 @@ body {
   font-size: 0;
   width: 138px;
   /* left: 228px; */
-  left: 34%;
+  left: 30%;
 }
 [class*="heart-piece-"] {
   position: absolute;
