@@ -1,4 +1,4 @@
-var count = new Date("May 13, 2020 13:00:00").getTime();
+var count = new Date("Sep 11, 2020 13:00:00").getTime();
 const daysView = document.querySelector("#days");
 const hoursView = document.querySelector("#hours");
 const minutesView = document.querySelector("#minutes");
@@ -14,8 +14,15 @@ var x = setInterval(() => {
     document.querySelector("h2").style.display = "none";
     document.querySelector("h1").textContent = "Phi Vân";
     document.querySelector(".flex-container").style.display = "flex";
-    document.getElementById("my_audio").muted = false;
-    document.getElementById("my_audio").play();
+    document.querySelector(".far").addEventListener("click", function () {
+      alert(
+        "Lỡ như lúc này chúng ta không còn nói chuyện với nhau nữa...thì anh vẫn muốn chúc em một ngày sinh nhật vui vẻ ^^"
+      );
+      document.querySelector("i").className = "fa fa-heart";
+      document.querySelector("i").style.color = "red";
+      document.getElementById("my_audio").muted = false;
+      document.getElementById("my_audio").play();
+    });
   } else {
     const second = 1000,
       minute = second * 60,
