@@ -19,7 +19,7 @@
   .lato {
     font-size: 60px;
     padding-bottom: 14px;
-    font-family: "Lato", sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 100;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -57,7 +57,7 @@
   .lato {
     font-size: 60px;
     padding-bottom: 14px;
-    font-family: "Lato", sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 200;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -84,7 +84,7 @@ html {
 body {
   background: url(pv.jpg) no-repeat center fixed;
   background-size: cover;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -218,7 +218,7 @@ body {
   /* left: 228px; */
   left: 30%;
 }
-[class*="heart-piece-"] {
+[class*='heart-piece-'] {
   position: absolute;
   top: -5px;
   width: 10px;
@@ -442,4 +442,63 @@ body {
     height: 30px;
     top: -15px;
   }
+}
+
+.hot-container p {
+  margin-top: 10px;
+}
+a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.hot-container {
+  min-height: 100px;
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+button.btn {
+  display: inline-block;
+  color: #666;
+  background-color: #eee;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom-width: 3px;
+}
+
+button.btn:hover {
+  background-color: #e3e3e3;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+button.btn:active {
+  background-color: #ccc;
+  border-color: rgba(0, 0, 0, 0.9);
+}
+
+/* red button */
+
+button.btn.btn-red {
+  background-color: #e48681;
+  border-color: rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+button.btn.btn-red:hover {
+  background-color: #da4f49;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+button.btn.btn-red:active {
+  background-color: #b32c24;
+  border-color: rgba(0, 0, 0, 0.9);
 }
