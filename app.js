@@ -6,6 +6,7 @@ const secondsView = document.querySelector('#seconds');
 const displayAnimation = document.querySelector('.flex-container');
 const displayOneechanBtn = document.querySelector('.hot-container');
 displayAnimation.style.display = 'none';
+displayOneechanBtn.style.display = 'none';
 var x = setInterval(() => {
   var now = new Date().getTime();
   var d = count - now;
