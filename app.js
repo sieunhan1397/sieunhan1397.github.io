@@ -4,6 +4,7 @@ const hoursView = document.querySelector('#hours');
 const minutesView = document.querySelector('#minutes');
 const secondsView = document.querySelector('#seconds');
 const displayAnimation = document.querySelector('.flex-container');
+const displayOneechanBtn = document.querySelector('.hot-container');
 displayAnimation.style.display = 'none';
 var x = setInterval(() => {
   var now = new Date().getTime();
@@ -16,6 +17,7 @@ var x = setInterval(() => {
     // document.querySelector("h1").style.fontSize = "70px";
     document.querySelector('h1').className = 'lato';
     document.querySelector('.flex-container').style.display = 'flex';
+    document.querySelector('.hot-container').style.display = 'flex';
     document.querySelector('.far').addEventListener('click', function () {
       let index = 0;
       let flag = false;
