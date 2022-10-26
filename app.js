@@ -1,4 +1,4 @@
-var count = new Date('Sep 11, 2020 00:00:00').getTime();
+var count = new Date('Sep 11, 2023 00:00:00').getTime();
 const daysView = document.querySelector('#days');
 const hoursView = document.querySelector('#hours');
 const minutesView = document.querySelector('#minutes');
